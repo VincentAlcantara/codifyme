@@ -1,34 +1,26 @@
-/***************************************************************
-
-Theme Name: html5codifyme
-Theme URI: www.codifyme.net
+/*
+Theme Name: HTML5 CodifyMe
+Theme URI: www.ehatchery.com.au
 Author: Vincent Alcantara
-Author URI: eHatchery.com.au
+Author URI: www.ehatchery.com.au
 Template: html5blank
-Description: Theme created for the CodifyMe website
+Description: Theme created for Codify Me
 Version: 1.0
 License: GNU General Public License
 License URI: license.txt
-Text Domain: Responsive Child
+Text Domain: Mystile
 Domain Path: /languages/
-Tags: 
+Tags: party, slider
+*/
 
-1. Globals
-2. Header
-3. Navigation
-4. Content
-  4.1 Post
-  4.2 Woocommerce
-5. Sidebars
-6. Footer 
-7. Widgets
-8. Media (Responsive)
+@import url("../html5blank/style.css");
 
-****************************************************************/
+p {
+	border: 1px solid red;
+}
 
-/***************************************************************
-*
-* 1. Globals
-*
-****************************************************************/
-
+input[type=submit] {
+    background-color: #37a447;
+    border: 1px solid #37a447;
+    color: #fff;
+}
