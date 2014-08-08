@@ -19,10 +19,11 @@ Tags: party, slider
 
 
 /* Reset */
-html, body {
-	margin: 0 !important;
-	padding: 0 !important;
-	 font-family: 'Open Sans','HelveticaNeue-Light',sans-serif;
+html, body, #container, #wrapper, #content-full, .type-page, .post-entry {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans','HelveticaNeue-Light',sans-serif;
+	height:100%;
 }
 
 div:focus {
@@ -41,6 +42,129 @@ div:focus {
 	border: 0;
 }
 
+h1 {
+	/*font-size:3.625em;*/
+	font-size:52px;
+
+}
+
+h2 {
+	/*font-size: 2em;*/
+	font-size:28px;
+	line-height: 19px;
+}
+
+
+
+/* landing page css */
+
+
+.full_background {
+	text-align: center;
+}
+
+
+/* for a full div background - ensure all parents' heights are 100% */
+#landing-page {
+	background-image: url('http://www.codifyme.net/wp-content/uploads/2014/08/no-bag-no-helmet.jpg');
+	min-height:100%;
+	min-width: 1024px;
+
+	width: 100%;
+	height: 100%;
+	
+
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+}
+
+#landing-page-header,
+#landing-page-message, 
+.widget-wrapper, 
+.colophon-widget .textwidget  {
+	max-width: 1024px;
+	margin: 0 auto;
+	text-align: center;
+	border: none;
+}
+
+.skip-container {
+	display: none;
+}
+/* Hide home title and header*/
+.home #header, #post-4 .post-title, #post-5 .post-title, .home .post-edit{
+	display: none;
+	margin: 0;
+}
+
+#landing-page-header {
+	height: 10%;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+#landing-page-logo{
+	height:30px;
+	display: inline-block;
+	float: left;
+	margin-top: 20px;
+}
+#landing-page-menu{
+	height:30px;
+	display: inline-block;
+	float: right;
+}
+
+#beta-message {
+	font-size: 26px;
+}
+
+
+
+
+#landing-page-message {
+	display: block;
+	height:90%;
+	position: relative;
+}
+#landing-page-message-header{
+	height:10%;
+}
+#landing-page-message-body {
+	height:40%;
+}
+#landing-page-message-footer {
+	height:10%;
+	
+}
+
+
+#landing-page-menu a{
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 0 5px;
+}
+
+input::-webkit-input-placeholder,
+input:-moz-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder {
+	color: #aaa;
+}
+
+input[type=text], input[type=email], textarea {
+	color: #000;
+	font-size: 14px;
+	padding:10px;	
+	font-family: 'Open Sans','HelveticaNeue-Light',sans-serif;
+}
+input[type=text], input[type=email] {
+	height: 46px;
+}
+input[type=email] {
+	margin-right: -5px;
+}
 
 input[type=submit]{
 	background-color: #37a447;
@@ -80,97 +204,29 @@ input[type=submit]:hover{
 	width: 120px;
 }
 
-/* landing page css */
-.full_background {
-	text-align: center;
-}
 
-.full_background h1 {
-	font-size: 3.625em;
-}
-
-
-
-#landing-page {
-	background-image: url('http://www.codifyme.net/wp-content/uploads/2014/08/no-bag-no-helmet.jpg');
-	width: 100%;
-	height: 100%;
-	background-position: center;
-	background-size: cover;
-	color: #fff;
-}
-
-
-
-#landing-page-header,
-#landing-page-message, 
-.widget-wrapper, 
-.colophon-widget .textwidget  {
-	max-width: 1024px;
-	margin: 0 auto;
-	padding: 5px 0;
-	text-align: center;
-	border: none;
-}
-#landing-page-header {
-	height: 90px;
-}
-
-
-#landing-page-message {
-	max-width: 1024px;
-	height: 550px;
-}
-#landing-page-logo {
-	float: left;
-	margin: 20px 0 0 5px;
-}
-
-#landing-page-menu {
-	float: right;
-	color: #fff;
-	margin-top: -2empx;
-}
-
-#landing-page-menu a{
-	color: #fff;
-	font-size: 1.2em;
-	font-weight: bold;
-	padding: 0 5px;
-}
-
-#beta-message {
-	margin-top: 20%;
-	font-size: 1.5em;
-
-}
-
-input[type=text], input[type=email], textarea {
-	color: #aaa;
-	font-size: 14px;
-	padding:10px;	
-	font-family: 'Open Sans','HelveticaNeue-Light',sans-serif;
-}
-input[type=text], input[type=email] {
-	height: 46px;
-}
-input[type=email] {
-	margin-right: -5px;
-}
-/* Hide home title and header*/
-.home #header, #post-4 .post-title, #post-5 .post-title, .home .post-edit{
-	display: none;
-}
 
 /* Footer */
 .footer-wrapper {
 	vertical-align: middle;
 	text-align: center;
+	background-color: #fff;
+}
+
+#footer-wrapper .grid.col-940{
+	background-color: #fff;
 }
 
 .colophon-widget .full_background p, .landing-footer {
-	font-size: 1.8em;
-	line-height: 1.5em;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+#text-2, #text-4{
+	background-color: #fff;
+	max-width: 100%;
+	margin: 0;
+	color: #888;
 }
 
 /* become a mentor and footer */
@@ -185,18 +241,16 @@ input[type=email] {
 	color: #636363;
 }
 
-
 /* Mission Statement */
-#mission-statement {
-	margin: 0 auto;
-	height: 450px;
-	padding: 50px 0;
+#mission-statement, #become-a-mentor, #sign-up-for-beta {
+	margin: 7em auto;
+	height:100%;
 }
-#become-a-mentor {
-	margin: 0 auto;
-	height: 600px;
-	padding: 50px 0;	
+
+#mission-statement h1, #become-a-mentor h1, #sign-up-for-beta h1{
+	color: #636363;
 }
+
 .landing_page_form {
 	text-align: center;
 	margin: 0 auto;
@@ -211,6 +265,7 @@ input[type=email] {
 	margin-top: 20px;
 }
 
+
 .colophon-widget input[type=email], .landing_page_beta_form input[type=email] {
 	width:350px;
 }
@@ -222,31 +277,134 @@ input[type=email] {
 	padding: 40px 0;
 	height: 40px;
 }
+/* Error messages */
 
-@media only screen and (max-width:360px) {
-	#landing-page-header, .widget-wrapper, .colophon-widget .textwidget {
-		max-width: 310px;
-		margin: 0 auto;
-		padding: 5px 0;
-		text-align: center;
-		border: none;
-	}
-	#landing-page-logo, #landing-page-menu {
-		float: none;
-	}
-
-	.full_background h1 {
-		font-size: 1.5em;
-	}
-	.full_background h2 {
-		font-size: 1em;
-	}
-	#beta-message {
-		margin-top: 100%;
-		font-size: 1em;
-	}
+span.wpcf7-not-valid-tip {
+	font-size: 12px;
+	font-family: font-family: 'Open Sans','HelveticaNeue-Light',sans-serif;
 }
 
+#landing-page span.wpcf7-not-valid-tip {
+	font-size: 12px;
+	display: inline;
+	float: left;
+	position: relative;
+	top: 50px;
+	left: 410px;
+	background: #eee;
+	width: 200px;
+	display: none;
+}
+
+.div.wpcf7-validation-errors {
+	background: #eee;
+	color: #000;
+}
+.social_icons a{
+	padding: 0 10px;
+}
+/*@media only screen and (min-width:320px) and (max-width:1023px){*/
+	@media (min-width:320px) and (max-width:1023px){
+		#landing-page-header,#landing-page-message, .widget-wrapper, 
+		.colophon-widget .textwidget , #container, #footer {
+			max-width: 100%;
+		}
+
+		#landing-page {
+			min-width: 100%;
+		}
+		#landing-page-header, #landing-page-message, .widget-wrapper, 
+		.colophon-widget .textwidget  {
+			max-width: 95%;
+		}
+
+		h1 {
+			font-size:26px;
+		}
+
+		h2 {
+			font-size:14px;
+			line-height: 18px;
+		}
+
+		#beta-message {
+			font-size: 13px;
+		}
+		#landing-page-menu a{
+			font-size: 10px;
+			padding: 3px;
+		}
+
+		.colophon-widget .full_background p, .landing-footer {
+			font-size: 12px;
+			line-height: 15px;
+		}
+
+		span.wpcf7-not-valid-tip, #landing-page span.wpcf7-not-valid-tip  {
+			font-size: 10px;
+		}
+
+		input[type=text], input[type=email], textarea, input[type=submit] {
+			font-size: 10px;
+		}
+
+		#landing-page-header {
+			padding: 2px 0;
+		}	
+
+		#mission-statement, #become-a-mentor, #sign-up-for-beta {
+			margin:0;
+		}
+
+		.landing_page_form {
+			width: 280px;
+		}
+
+		form {
+			margin: 0;
+		}
+
+		input[type=email], input[type=text]{
+			height:15px;
+		} 
+		input[type=submit], input[type=submit]:hover {
+			margin-top: 5px;
+			height:28px;
+			padding: 3px;
+		}
+	}
+
+	/* google nexus 
+	@media (max-width:384px) {
+		#landing-page-header,#landing-page-message, .widget-wrapper, 
+		.colophon-widget .textwidget , #container, #footer {
+			max-width: 100%;
+		}
+
+		#landing-page {
+			min-width: 95%;
+		}
+		#landing-page-header, #landing-page-message, .widget-wrapper, 
+		.colophon-widget .textwidget  {
+			max-width: 95%;
+		}
+	}
+*/
+	/*iphone*/
+	@media (max-width:320px) {
+		#landing-page-header,#landing-page-message, .widget-wrapper, 
+		.colophon-widget .textwidget , #container, #footer {
+			max-width: 320px;
+		}
+
+		#landing-page {
+			min-width: 320px;
+		}
+		#landing-page-header, #landing-page-message, .widget-wrapper, 
+		.colophon-widget .textwidget  {
+			max-width: 310px;
+		}
+	}
 
 
 
