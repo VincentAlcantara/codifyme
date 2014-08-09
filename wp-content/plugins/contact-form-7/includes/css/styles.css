@@ -21,18 +21,34 @@ div.wpcf7 .screen-reader-response {
 
 div.wpcf7-mail-sent-ok {
 	border: 2px solid #398f14;
+	background: #398f14;
+	border-radius: 2px;
+	color: #fff;
+	font-size: 14px;
 }
 
 div.wpcf7-mail-sent-ng {
 	border: 2px solid #ff0000;
+	background: #ff0000;
+	border-radius: 2px;
+	color: #000;
+	font-size: 14px;
 }
 
 div.wpcf7-spam-blocked {
 	border: 2px solid #ffa500;
+	border-radius: 2px;
+	background: #ffa500;
+	color: #000;
+	font-size: 14px;
 }
 
 div.wpcf7-validation-errors {
 	border: 2px solid #f7e700;
+	border-radius: 2px;
+	background: #f7e700;
+	color: #000;
+	font-size: 14px;
 }
 
 span.wpcf7-form-control-wrap {

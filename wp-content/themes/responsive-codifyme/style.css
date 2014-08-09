@@ -45,6 +45,7 @@ div:focus {
 h1 {
 	/*font-size:3.625em;*/
 	font-size:52px;
+	padding-top:0.7em;
 
 }
 
@@ -129,12 +130,18 @@ h2 {
 }
 #landing-page-message-header{
 	height:10%;
+	display: block;
+	width: 100%;
 }
 #landing-page-message-body {
 	height:40%;
+	display: block;
+	width:100%;
 }
 #landing-page-message-footer {
 	height:10%;
+	display: block;
+	width: 100%
 	
 }
 
@@ -297,8 +304,8 @@ span.wpcf7-not-valid-tip {
 }
 
 .div.wpcf7-validation-errors {
-	background: #eee;
-	color: #000;
+	background: #f7e700 !important;
+	color: #000 !important;
 }
 .social_icons a{
 	padding: 0 10px;
@@ -329,6 +336,7 @@ span.wpcf7-not-valid-tip {
 
 		#beta-message {
 			font-size: 13px;
+			margin: 0;
 		}
 		#landing-page-menu a{
 			font-size: 10px;
@@ -372,6 +380,10 @@ span.wpcf7-not-valid-tip {
 			height:28px;
 			padding: 3px;
 		}
+		.div.wpcf7-validation-errors {
+			background: #eee;
+			color: #000;
+		}
 	}
 
 	/* google nexus 
@@ -389,7 +401,7 @@ span.wpcf7-not-valid-tip {
 			max-width: 95%;
 		}
 	}
-*/
+	*/
 	/*iphone*/
 	@media (max-width:320px) {
 		#landing-page-header,#landing-page-message, .widget-wrapper, 
