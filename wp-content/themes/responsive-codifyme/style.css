@@ -45,7 +45,6 @@ div:focus {
 h1 {
 	/*font-size:3.625em;*/
 	font-size:52px;
-	padding-top:0.7em;
 
 }
 
@@ -121,27 +120,32 @@ h2 {
 }
 
 
-
-
 #landing-page-message {
 	display: block;
-	height:90%;
+	/*height:90%;*/
+	height: 90%;
 	position: relative;
 }
 #landing-page-message-header{
-	height:10%;
+	height:auto;
 	display: block;
 	width: 100%;
+	position: absolute;
+	top: 0;
+	padding-top: 5px;
 }
 #landing-page-message-body {
-	height:40%;
+	/*	height:2em;*/
 	display: block;
 	width:100%;
 }
 #landing-page-message-footer {
-	height:10%;
+	height:auto;
 	display: block;
-	width: 100%
+	width: 100%;
+	position: absolute;
+	bottom:0;
+	padding-bottom: 10%;
 	
 }
 
@@ -166,7 +170,13 @@ input[type=text], input[type=email], textarea {
 	padding:10px;	
 	font-family: 'Open Sans','HelveticaNeue-Light',sans-serif;
 }
+textarea {
+	width: 340px;
+	border: 1px solid #aaa !important;
+
+}
 input[type=text], input[type=email] {
+	border: 1px solid #aaa !important;
 	height: 46px;
 }
 input[type=email] {
@@ -310,114 +320,196 @@ span.wpcf7-not-valid-tip {
 .social_icons a{
 	padding: 0 10px;
 }
-/*@media only screen and (min-width:320px) and (max-width:1023px){*/
-	@media (min-width:320px) and (max-width:1023px){
-		#landing-page-header,#landing-page-message, .widget-wrapper, 
-		.colophon-widget .textwidget , #container, #footer {
-			max-width: 100%;
-		}
-
-		#landing-page {
-			min-width: 100%;
-		}
-		#landing-page-header, #landing-page-message, .widget-wrapper, 
-		.colophon-widget .textwidget  {
-			max-width: 95%;
-		}
-
-		h1 {
-			font-size:26px;
-		}
-
-		h2 {
-			font-size:14px;
-			line-height: 18px;
-		}
-
-		#beta-message {
-			font-size: 13px;
-			margin: 0;
-		}
-		#landing-page-menu a{
-			font-size: 10px;
-			padding: 3px;
-		}
-
-		.colophon-widget .full_background p, .landing-footer {
-			font-size: 12px;
-			line-height: 15px;
-		}
-
-		span.wpcf7-not-valid-tip, #landing-page span.wpcf7-not-valid-tip  {
-			font-size: 10px;
-		}
-
-		input[type=text], input[type=email], textarea, input[type=submit] {
-			font-size: 10px;
-		}
-
-		#landing-page-header {
-			padding: 2px 0;
-		}	
-
-		#mission-statement, #become-a-mentor, #sign-up-for-beta {
-			margin:0;
-		}
-
-		.landing_page_form {
-			width: 280px;
-		}
-
-		form {
-			margin: 0;
-		}
-
-		input[type=email], input[type=text]{
-			height:15px;
-		} 
-		input[type=submit], input[type=submit]:hover {
-			margin-top: 5px;
-			height:28px;
-			padding: 3px;
-		}
-		.div.wpcf7-validation-errors {
-			background: #eee;
-			color: #000;
-		}
+@media (min-width:320px) and (max-width:1023px){
+	#landing-page-header,#landing-page-message, .widget-wrapper, 
+	.colophon-widget .textwidget , #container, #footer {
+		max-width: 100%;
 	}
 
-	/* google nexus 
-	@media (max-width:384px) {
-		#landing-page-header,#landing-page-message, .widget-wrapper, 
-		.colophon-widget .textwidget , #container, #footer {
-			max-width: 100%;
-		}
-
-		#landing-page {
-			min-width: 95%;
-		}
-		#landing-page-header, #landing-page-message, .widget-wrapper, 
-		.colophon-widget .textwidget  {
-			max-width: 95%;
-		}
+	#landing-page {
+		min-width: 100%;
 	}
-	*/
-	/*iphone*/
-	@media (max-width:320px) {
-		#landing-page-header,#landing-page-message, .widget-wrapper, 
-		.colophon-widget .textwidget , #container, #footer {
-			max-width: 320px;
-		}
+	#landing-page-header, #landing-page-message, .widget-wrapper, 
+	.colophon-widget .textwidget  {
+		max-width: 95%;
+	}
+	#landing-page-header {
+		padding: 2px; 
+		height: 35px;
 
-		#landing-page {
-			min-width: 320px;
-		}
-		#landing-page-header, #landing-page-message, .widget-wrapper, 
-		.colophon-widget .textwidget  {
-			max-width: 310px;
-		}
+	}
+	#landing-page-logo {
+		margin: 2px;
+	}
+	#landing-page-header p {
+		margin: 0;
+	}
+	#landing-page-menu {
+		margin: 2px;
+	}
+	#landing-page-menu a{
+		font-size: 0.7em;
+		padding: 0.7em 0;
 	}
 
 
+	h1 {
+		/*font-size:26px;
+		margin: 5px;*/
+		font-size: 2em;
+		margin: 0.5em;
+		padding-top: 0;
+	}
+
+	h2 {
+		font-size:1.5em;
+		line-height: 1.1em;
+		margin: 0.4em;
+	}
+
+	#landing-page-message {
+		height: 90%;
+	}
+	#landing-page-message-header {
+		height:auto;
+	}
+	/*#landing-page-message-body {
+		height: 4em;
+	}*/
+	#landing-page-message-footer {
+		height: auto;
+		position: absolute;
+		bottom: 0;
+	}
+
+	#beta-message {
+		font-size: 13px;
+		margin: 0;
+
+	}
+
+	div.wpcf7-validation-errors, div.wpcf7-mail-sent-ok {
+		font-size: 0.8em;
+	}
+
+	
+
+
+	.colophon-widget .full_background p, .landing-footer {
+		font-size: 12px;
+		line-height: 15px;
+	}
+
+	span.wpcf7-not-valid-tip, #landing-page span.wpcf7-not-valid-tip  {
+		font-size: 10px;
+	}
+
+	input[type=text], input[type=email], textarea, input[type=submit] {
+		font-size: 10px;
+	}
+
+
+
+	#mission-statement, #become-a-mentor, #sign-up-for-beta {
+		margin:0;
+	}
+
+	.landing_page_form {
+		width: 280px;
+	}
+
+	form {
+		margin: 0;
+	}
+
+	input[type=email], input[type=text]{
+		margin-top: 5px;
+		height: 28px;
+		padding: 3px;
+	} 
+	input[type=submit], input[type=submit]:hover {
+		margin-top: 5px;
+		height:28px;
+		padding: 3px;
+	}
+	.div.wpcf7-validation-errors {
+		background: #eee;
+		color: #000;
+	}
+	textarea {
+		width: 300px;
+
+	}
+}
+@media (max-width:320px) {
+	#landing-page-header,#landing-page-message, .widget-wrapper, 
+	.colophon-widget .textwidget , #container, #footer {
+		max-width: 320px;
+	}
+
+	#landing-page {
+		min-width: 320px;
+	}
+	#landing-page-header, #landing-page-message, .widget-wrapper, 
+	.colophon-widget .textwidget  {
+		max-width: 310px;
+	}
+
+	h1 {
+		font-size: 1.9em;
+		margin: 0.1em;
+		padding-top: 0;
+	}
+
+	h2 {
+		font-size:14px;
+		line-height: 18px;
+		margin: 0.05em;
+	}
+	#beta-message {
+		font-size: 13px;
+		margin: 0 0 -15px 0;
+
+	}
+	#landing-page-message {
+	display: block;
+	/*height:90%;*/
+	height: 95%;
+	}
+	#landing-page-header {
+		padding: 6px 2px;
+		height: auto;
+	}
+	#landing-page-message-footer {
+		padding-bottom: 0;
+	}
+}
+
+@media (max-height: 320px) {
+	h1 {
+		font-size: 1.9em;
+		margin: 0.1em;
+		padding-top: 0;
+	}
+
+	h2 {
+		font-size:0.9em;
+		line-height: 1em;
+		margin: 0.05em;
+	}
+
+	#landing-page-header {
+		padding: 5px 2px;
+		height: auto;
+	}
+	#beta-message {
+		font-size: 0.9em;
+
+	}
+	#landing-page-message-footer {
+		padding-bottom: 1%;
+	}
+
+}
 
 
