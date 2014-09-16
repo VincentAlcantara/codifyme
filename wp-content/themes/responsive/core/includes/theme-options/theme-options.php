@@ -55,7 +55,7 @@ function responsive_inline_css() {
 	global $responsive_options;
 	if( !empty( $responsive_options['responsive_inline_css'] ) ) {
 		echo '<!-- Custom CSS Styles -->' . "\n";
-		echo '<style type="text/css" media="screen" id="debug">' . "\n";
+		echo '<style type="text/css" media="screen">' . "\n";
 		echo $responsive_options['responsive_inline_css'] . "\n";
 		echo '</style>' . "\n";
 	}

@@ -122,7 +122,15 @@ function responsive_widgets_init() {
 						  'before_widget' => '<div id="%1$s" class="colophon-widget widget-wrapper %2$s">',
 						  'after_widget'  => '</div>'
 					  ) );
-
+	register_sidebar( array(
+						  'name'          => __( 'Landing Colophon Widget', 'responsive' ),
+						  'description'   => __( 'Area 14 - sidebar-colophon-landing.php, 100% width Footer widgets for Codifyme landing page', 'responsive' ),
+						  'id'            => 'landing-colophon-widget',
+						  'before_title'  => '<div class="widget-title"><h3>',
+						  'after_title'   => '</h3></div>',
+						  'before_widget' => '<div id="%1$s" class="landing-colophon-widget widget-wrapper %2$s">',
+						  'after_widget'  => '</div>'
+					  ) );
 	register_sidebar( array(
 						  'name'          => __( 'Top Widget', 'responsive' ),
 						  'description'   => __( 'Area 11 - sidebar-top.php - Displays on the right of the header', 'responsive' ),
@@ -153,7 +161,8 @@ function responsive_footer_widgets( $params ) {
 	//Check if we are displaying "Footer Sidebar"
 	if ( $params[0]['id'] == 'footer-widget' ) {
 		$footer_widget_num++;
-		$divider = 3; //This is number of widgets that should fit in one row
+		$divider = 3;
+		$divider = apply_filters( 'responsive_number_footer_widgets', $divider ); //This is number of widgets that should fit in one row
 
 		//If it's third widget, add last class to it
 		if ( $footer_widget_num % $divider == 0 ) {

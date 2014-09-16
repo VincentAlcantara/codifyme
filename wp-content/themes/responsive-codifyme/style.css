@@ -19,11 +19,12 @@ Tags: party, slider
 
 
 /* Reset */
-html, body, #container, #wrapper, #content-full, .type-page, .post-entry {
+html, body, #container, #wrapper, #content-full, .type-page, .post-entry{
 	margin: 0;
 	padding: 0;
 	font-family: 'Open Sans','HelveticaNeue-Light',sans-serif;
 	height:100%;
+	background: #fff;
 }
 
 div:focus {
@@ -66,7 +67,7 @@ h2 {
 
 /* for a full div background - ensure all parents' heights are 100% */
 #landing-page {
-	background-image: url('http://www.codifyme.net/wp-content/uploads/2014/08/no-bag-no-helmet.jpg');
+	background-image: url('http://www.codifyme.co/wp-content/uploads/2014/08/no-bag-no-helmet.jpg');
 	min-height:100%;
 	min-width: 1024px;
 
@@ -82,13 +83,30 @@ h2 {
 #landing-page-header,
 #landing-page-message, 
 .widget-wrapper, 
-.colophon-widget .textwidget  {
+.colophon-widget .textwidget{
 	max-width: 1024px;
 	margin: 0 auto;
 	text-align: center;
 	border: none;
 }
 
+#header,
+.page h1,
+.codify_container{
+	max-width: 1024px;
+	margin: 1em auto;
+	text-align: center;
+	border: none;
+}
+
+.codify_container p {
+	padding: 0 5px;
+	color: #888;
+}
+#preview-iframe {
+	max-width: 1280px;
+	margin: 0 auto;
+}
 .skip-container {
 	display: none;
 }
@@ -123,7 +141,7 @@ h2 {
 #landing-page-message {
 	display: block;
 	/*height:90%;*/
-	height: 90%;
+	height: 88%;
 	position: relative;
 }
 #landing-page-message-header{
@@ -145,16 +163,26 @@ h2 {
 	width: 100%;
 	position: absolute;
 	bottom:0;
-	padding-bottom: 10%;
+	padding-bottom: 5%;
 	
 }
 
 
-#landing-page-menu a{
+#landing-page-menu a {
 	color: #fff;
 	font-size: 18px;
 	font-weight: bold;
 	padding: 0 5px;
+}
+
+.top-menu li a {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 0 5px;
+}
+
+#logo {
+	padding:5px;
 }
 
 input::-webkit-input-placeholder,
@@ -183,7 +211,7 @@ input[type=email] {
 	margin-right: -5px;
 }
 
-input[type=submit]{
+input[type=submit], select{
 	background-color: #37a447;
 	border: 1px solid #37a447;
 	color: #fff;
@@ -221,7 +249,24 @@ input[type=submit]:hover{
 	width: 120px;
 }
 
+/* iframe */
+#preview-home, #preview-mentor-profile, #preview-respond-to-booking, 
+#preview-iframe {
+	position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
 
+iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #eee;
+}
 
 /* Footer */
 .footer-wrapper {
@@ -234,7 +279,8 @@ input[type=submit]:hover{
 	background-color: #fff;
 }
 
-.colophon-widget .full_background p, .landing-footer {
+.colophon-widget .full_background p,
+.landing-footer, .codify_container p  {
 	font-size: 20px;
 	line-height: 30px;
 }
@@ -320,6 +366,9 @@ span.wpcf7-not-valid-tip {
 .social_icons a{
 	padding: 0 10px;
 }
+.textwidget {
+		font-size: 11px;
+}
 @media (min-width:320px) and (max-width:1023px){
 	#landing-page-header,#landing-page-message, .widget-wrapper, 
 	.colophon-widget .textwidget , #container, #footer {
@@ -347,16 +396,41 @@ span.wpcf7-not-valid-tip {
 	#landing-page-menu {
 		margin: 2px;
 	}
-	#landing-page-menu a{
-		font-size: 0.7em;
+	#landing-page-menu a {
+		font-size: 10px;
 		padding: 0.7em 0;
 	}
 
+	#header {
+		margin: 0;
+	}
+	.top-menu {
+		float: right;
+		padding: 0 2px;
+	} 
+
+	.top-menu li a {
+		font-size: 10px;
+		padding: 0 2px;
+	}
+
+	#logo {
+		float:left;
+		padding: 5px 2px;
+	}
+
+ 	.page h1, .codify_container {
+ 		margin: 1em auto`;
+ 	}
+
+ 	.page h1 {
+ 		font-size: 21px;
+ 	}
 
 	h1 {
 		/*font-size:26px;
 		margin: 5px;*/
-		font-size: 2em;
+		font-size: 21px;
 		margin: 0.5em;
 		padding-top: 0;
 	}
@@ -395,7 +469,7 @@ span.wpcf7-not-valid-tip {
 	
 
 
-	.colophon-widget .full_background p, .landing-footer {
+	.colophon-widget .full_background p, .landing-footer, .codify_container p {
 		font-size: 12px;
 		line-height: 15px;
 	}
@@ -440,6 +514,8 @@ span.wpcf7-not-valid-tip {
 		width: 300px;
 
 	}
+
+	
 }
 @media (max-width:320px) {
 	#landing-page-header,#landing-page-message, .widget-wrapper, 
@@ -482,6 +558,12 @@ span.wpcf7-not-valid-tip {
 	}
 	#landing-page-message-footer {
 		padding-bottom: 0;
+	}
+	input[type=email] {
+		margin: 0;
+	}
+	div.wpcf7 img.ajax-loader {
+		margin-left: 0;
 	}
 }
 
