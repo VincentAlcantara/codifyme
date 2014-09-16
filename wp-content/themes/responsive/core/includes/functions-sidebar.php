@@ -122,15 +122,7 @@ function responsive_widgets_init() {
 						  'before_widget' => '<div id="%1$s" class="colophon-widget widget-wrapper %2$s">',
 						  'after_widget'  => '</div>'
 					  ) );
-	register_sidebar( array(
-						  'name'          => __( 'Landing Colophon Widget', 'responsive' ),
-						  'description'   => __( 'Area 14 - sidebar-colophon-landing.php, 100% width Footer widgets for Codifyme landing page', 'responsive' ),
-						  'id'            => 'landing-colophon-widget',
-						  'before_title'  => '<div class="widget-title"><h3>',
-						  'after_title'   => '</h3></div>',
-						  'before_widget' => '<div id="%1$s" class="landing-colophon-widget widget-wrapper %2$s">',
-						  'after_widget'  => '</div>'
-					  ) );
+
 	register_sidebar( array(
 						  'name'          => __( 'Top Widget', 'responsive' ),
 						  'description'   => __( 'Area 11 - sidebar-top.php - Displays on the right of the header', 'responsive' ),

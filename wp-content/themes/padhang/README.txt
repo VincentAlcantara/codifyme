@@ -2,8 +2,8 @@
 
 Contributor: hirizh
 Requires at least: 3.8
-Tested up to: 3.9
-Stable tag: 1.0.3
+Tested up to: 3.9.2
+Stable tag: 1.1.0
 License: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
@@ -12,11 +12,11 @@ A minimalist-content-focused theme. Padhang comes with responsive layout, 2 widg
 == Features ==
 * Minimalist-content-focused design
 * Responsive layout
-* Custom header
 * Custom background
 * Custom color via theme customizer
 * Custom menu
 * Social menu
+* Upload logo and favicon
 * 2 widget areas
 * Translation-ready
 
@@ -53,3 +53,19 @@ A minimalist-content-focused theme. Padhang comes with responsive layout, 2 widg
 - Add more social icons
 - Add theme page for info, documentations, and changelog
 - Better navigation on small device
+
+1.1.0 - August 17, 2014
+- New default fonts: Roboto and Roboto Slab
+- New styles for navigation, form elements, blockquote
+- New mobile navigation using slicknav.js
+- New logo and favicon uploader
+- New options to show/hide site title and tagline
+- New options to revert back to old Open Sans font
+- New options to change site title and tagline color
+- New option to make the background image stretched
+- Add support for post format: audio, chat, gallery, status
+- Add support for editor style
+- Background image is now controllable from background options
+- Remove custom header support
+- Fix social menu not showing icons
+- Fix post meta for updated date

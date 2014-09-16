@@ -1,0 +1,151 @@
+/*
+Theme Name: Arcade CodifyMe
+Theme URI: www.codifyme.co
+Author: Vincent Alcantara
+Author URI: www.codifyme.co
+Template: arcade-basic 
+Description: Theme created for Codify Me
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Text Domain: arcade
+Domain Path: /languages/
+Tags: 
+
+TABLE OF CONTENTS
+
+SETTINGS
+Global ....................... Globally-available variables and config
+
+BASE
+Headings ..................... H1-H6 styles
+
+OBJECTS (Horizontal layouts)
+Wrappers ..................... Wrapping and constraining elements
+
+COMPONENTS (Vertical layouts)
+Header ....................... The main header
+Content ...................... The main content
+Footer ....................... The main footer
+
+FUNCTIONAL ELEMENTS .......... Styling based on the element's purpose
+                                e.g. positive-button, selective-tab
+
+CONTENT ELEMENTS ............. Styling based on the element's content
+                                e.g. submit-button, profile-photo
+
+PRESENTATIONAL ELEMENTS ...... Styling based on the element's look
+                                e.g. green-button 
+ 
+SPECIAL
+Iframes ......................
+Widgets ......................
+ 
+HTML LAYOUT
+Layout of this style is below.  Please use appropriate indentation.
+
+
+ 
+MEDIA 
+@media (min-width:320px) 
+	and (max-width:1023px) ... For mobile devices
+@media (max-height: 320px) ... For iPhone
+
+*/
+
+@import url("../arcade-basic/style.css");
+
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+*/
+
+/* {
+	border: 1px dashed red;
+}
+*/
+/*------------------------------------*\
+  FUNCTIONAL ELEMENTS
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+  OBJECTS ELEMENTS
+\*------------------------------------*/
+
+/*
+ * Wrappers
+ */
+
+
+/*------------------------------------*\
+  CONTENT ELEMENTS
+\*------------------------------------*/
+
+input {
+	border-radius: 0;
+	-mox-border-radius: 0;
+}
+/* submit buttons */
+
+input[type=text], input[type=submit] {
+	height: 46px;
+
+}
+input[type=submit]{
+	background-color: #37a447;
+	border: 1px solid #37a447;
+	color: #fff;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#37a447),to(#37a447));
+	background-image: -webkit-linear-gradient(top,#37a447,#37a447);
+	background-image: -moz-linear-gradient(top,#37a447,#37a447);
+	background-image: -ms-linear-gradient(top,#37a447,#37a447);
+	background-image: -o-linear-gradient(top,#37a447,#37a447);
+	background-image: linear-gradient(top,#37a447,#37a447);
+	font-weight: normal;
+	text-shadow: none;
+	width: 100%;
+}
+
+/* Gravity Form wrapper */
+
+.only-on-home #more-site {
+	border: none;
+}
+
+.container .gform_wrapper {
+	margin: 10px auto;
+}
+.container .gform_wrapper form {
+	width: 50%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+	.container .gform_wrapper .gform_body {
+		flex-grow: 2;
+		margin: auto;
+		padding:0;
+		
+	}
+	.container .gform_wrapper .gform_footer {
+		padding: 0;
+		margin: auto;
+		
+	}
+
+		
+/*------------------------------------*\
+  MEDIA
+\*------------------------------------*/
+@media (min-width:1200px) {
+	
+}
+
+@media (min-width:992px) {
+
+}
+
+@media (min-width:768px) {
+
+}
+
+

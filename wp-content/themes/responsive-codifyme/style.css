@@ -99,6 +99,25 @@ h2 {
 	border: none;
 }
 
+
+a, #content-blog h2 {
+	color: #37a447;
+}
+
+a:hover, #content-blog h2:hover{
+	color: #8BE25F;
+}
+
+#content, #content-blog {
+	margin-left: 9.2em;
+}
+
+.col-620 {
+	width: 51%;
+}
+.col-300 {
+	width: 26%;
+}
 .codify_container p {
 	padding: 0 5px;
 	color: #888;

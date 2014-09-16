@@ -64,7 +64,7 @@ $responsive_options = responsive_get_options();
 						<p style="text-align: center;">You are plowing through your project, coding away like a boss, but all of a sudden, you run into problems.  Internet searches lead you into a spiral of questionable answers and even more questions. You are stuck. We have all been there. </p>
 						<p style="text-align: center;">Our mission is to get you going again.  Getting “unstuck” is a team effort.  At CodifyMe we work together by connecting you with a Code Mentor who can offer support in real time.</p>
 						<p style="text-align: center;">By helping each other out, we all learn.  Getting stuck has never been so much fun. CodifyMe is the tool, but you are the coding community. </p>
-						<form action="/preview">
+						<form action="./preview">
     						<input type="submit" value="Preview">
 						</form>
 					</div>

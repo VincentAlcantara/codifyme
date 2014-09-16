@@ -1,0 +1,142 @@
+/*
+* Theme Name: Responsive Symmetry
+* Theme URI: www.ehatchery.com.au
+* Author: Vincent Alcantara
+* Author URI: www.ehatchery.com.au
+* Template: responsive
+* Description: Theme created for Codify Me
+* Version: 1.0
+* License: GNU General Public License
+* License URI: license.txt
+* Text Domain: responsive
+* Domain Path: /languages/
+* Tags:
+* 
+* 
+* TABLE OF CONTENTS
+* 
+* SETTINGS
+* Global ....................... Globally-available variables and config
+* 
+* BASE
+* Headings ..................... H1-H6 styles
+* 
+* OBJECTS (Horizontal layouts)
+* Wrappers ..................... Wrapping and constraining elements
+*
+* COMPONENTS (Vertical layouts)
+* Header ....................... The main header
+* Content ...................... The main content
+* Footer ....................... The main footer
+*
+* FUNCTIONAL ELEMENTS .......... Styling based on the element's purpose
+*                                e.g. positive-button, selective-tab
+*
+* CONTENT ELEMENTS ............. Styling based on the element's content
+*                                e.g. submit-button, profile-photo
+*
+* PRESENTATIONAL ELEMENTS ...... Styling based on the element's look
+*                                e.g. green-button 
+* 
+* SPECIAL
+* Iframes ......................
+* Widgets ......................
+* 
+* HTML LAYOUT
+* Layout of this style is below.  Please use appropriate indentation.
+*
+*	body (.home, page, )
+*		#container
+*			#header
+*			#wrapper
+*				#content-full
+*			#footer
+* 
+* MEDIA 
+* @media (min-width:320px) 
+*   and (max-width:1023px) ..... For mobile devices
+* @media (max-height: 320px) ... For iPhone
+*
+*/
+
+@import url("../responsive/style.css");
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,
+	400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+/*------------------------------------*\
+    #SETTINGS
+\*------------------------------------*/
+
+
+
+
+
+/*------------------------------------*\
+    #BASE
+\*------------------------------------*/
+
+
+
+
+
+/**************************************\
+ * CONTENT ELEMENTS
+\**************************************/
+
+/*------------------------------------*\
+ 	HTML eleemnts
+\*------------------------------------*/
+
+ html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans','HelveticaNeue-Light',sans-serif;
+	height:100%;
+	background: #fff;
+}
+
+div:focus {
+	outline: 0;
+}
+
+/*------------------------------------*\
+ 	Headings
+\*------------------------------------*/
+
+h1 {
+	/*font-size:3.625em;*/
+	font-size:52px;
+
+}
+
+h2 {
+	/*font-size: 2em;*/
+	font-size:28px;
+	line-height: 19px;
+}
+
+/*------------------------------------*\
+ 	Wrappers
+\*------------------------------------*/
+
+
+#container{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans','HelveticaNeue-Light',sans-serif;
+	height:100%;
+	background: #fff;
+}
+
+
+@media (max-width:320px) {
+
+}
+
+@media (max-height: 320px) {
+
+
+}
+
+
