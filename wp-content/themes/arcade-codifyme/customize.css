@@ -1,7 +1,7 @@
 .donate-region{
 	text-align: center;
 }
-.basic .myButton {
+.basic .donate-button-price {
 	border-top-width: 4px;
 	border-bottom-width: 4px;
 	border-left-width: 0px;
@@ -25,15 +25,13 @@
 	margin-right: 50px;
     }
 
-.basic .myButton:hover {
+.basic .donate-button-price:hover {
 	background-color:#9197e5;
 	color: #383332;
 	text-decoration:none;
 }
 
-
-
-.basic .DonateButton{
+.basic .donate-button{
 	background-color:#db3596;
 	-moz-border-radius:8px;
 	-webkit-border-radius:8px;
@@ -49,7 +47,7 @@
 	text-decoration:none;
 	text-shadow:0px 1px 0px #db3596;
 	}
-.basic .DonateButton:hover {
+.basic .donate-button:hover {
 	background-color:#db3596;
 	color:#ffffff;
 	text-decoration:none;
