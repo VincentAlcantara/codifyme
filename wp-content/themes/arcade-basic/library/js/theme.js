@@ -60,10 +60,12 @@
 				window_height = ( $( 'body' ).hasClass( 'admin-bar' ) ) ? $window.height() - 32 : $window.height();
 				if ( window_width < 599 || ! $( 'body' ).hasClass( 'home' ) || ( $( 'body' ).hasClass( 'home' ) && $( 'body' ).hasClass( 'paged' ) ) ) {
 					$card.css( 'height', 300 );
-					$more_site.removeData( 'scroll-to' ).attr( 'data-scroll-to', 300 );
+					//removed for arcade-codifyme theme
+					//$more_site.removeData( 'scroll-to' ).attr( 'data-scroll-to', 300 );
 				} else {
 					$card.css( 'height', window_height );
-					$more_site.removeData( 'scroll-to' ).attr( 'data-scroll-to', window_height );
+					//removed for arcade-codifyme theme
+					//$more_site.removeData( 'scroll-to' ).attr( 'data-scroll-to', window_height );
 				}
 			} )
 			.trigger( 'resize.title-card' )

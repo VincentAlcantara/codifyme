@@ -1,134 +1,96 @@
-<div class="codify_container">
-	We're glad you're as excited about CodifyMe as we are.
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>WordPress &#8250; ReadMe</title>
+	<link rel="stylesheet" href="wp-admin/css/install.css?ver=20100228" type="text/css" />
+</head>
+<body>
+<h1 id="logo">
+	<a href="https://wordpress.org/"><img alt="WordPress" src="wp-admin/images/wordpress-logo.png" /></a>
+	<br /> Version 4.0
+</h1>
+<p style="text-align: center">Semantic Personal Publishing Platform</p>
 
-	To give you a taste of what we aim to build, here is a link to our mock ups. Bear in mind that they're just mockups so not everything will work, but hopefully you'll be able to get an idea of what we're about.
+<h1>First Things First</h1>
+<p>Welcome. WordPress is a very special project to me. Every developer and contributor adds something unique to the mix, and together we create something beautiful that I&#8217;m proud to be a part of. Thousands of hours have gone into WordPress, and we&#8217;re dedicated to making it better every day. Thank you for making it part of your world.</p>
+<p style="text-align: right">&#8212; Matt Mullenweg</p>
 
-	<select id="preview_id">
-		<option value="">Choose a CodifyMe page to preview ...</option>
-		<option value="1">Home Page</option>
-		<option value="2">Mentor Profile</option>
-		<option value="3">Respond To Booking</option>
-	</select>
+<h1>Installation: Famous 5-minute install</h1>
+<ol>
+	<li>Unzip the package in an empty directory and upload everything.</li>
+	<li>Open <span class="file"><a href="wp-admin/install.php">wp-admin/install.php</a></span> in your browser. It will take you through the process to set up a <code>wp-config.php</code> file with your database connection details.
+		<ol>
+			<li>If for some reason this doesn&#8217;t work, don&#8217;t worry. It doesn&#8217;t work on all web hosts. Open up <code>wp-config-sample.php</code> with a text editor like WordPad or similar and fill in your database connection details.</li>
+			<li>Save the file as <code>wp-config.php</code> and upload it.</li>
+			<li>Open <span class="file"><a href="wp-admin/install.php">wp-admin/install.php</a></span> in your browser.</li>
+		</ol>
+	</li>
+	<li>Once the configuration file is set up, the installer will set up the tables needed for your blog. If there is an error, double check your <code>wp-config.php</code> file, and try again. If it fails again, please go to the <a href="https://wordpress.org/support/" title="WordPress support">support forums</a> with as much data as you can gather.</li>
+	<li><strong>If you did not enter a password, note the password given to you.</strong> If you did not provide a username, it will be <code>admin</code>.</li>
+	<li>The installer should then send you to the <a href="wp-login.php">login page</a>. Sign in with the username and password you chose during the installation. If a password was generated for you, you can then click on &#8220;Profile&#8221; to change the password.</li>
+</ol>
 
-	<div id="preview-home">
-		<iframe src="http://app.uxpin.com/668523351332f4675f5308508350d943c4d06412/10755173" width="1294px" height="680px"></iframe>
-	</div>
-	<div id="preview-mentor-profile">
-		<iframe src="http://app.uxpin.com/668523351332f4675f5308508350d943c4d06412/10756392#?0=null&R=1" width="1294px" height="680px"></iframe>
-	</div>
-	<div id="preview-respond-to-booking">
-		<iframe src="http://app.uxpin.com/668523351332f4675f5308508350d943c4d06412/10756495#R=1" width="1294px" height="680px"></iframe>
-	</div>
-</div>
+<h1>Updating</h1>
+<h2>Using the Automatic Updater</h2>
+<p>If you are updating from version 2.7 or higher, you can use the automatic updater:</p>
+<ol>
+	<li>Open <span class="file"><a href="wp-admin/update-core.php">wp-admin/update-core.php</a></span> in your browser and follow the instructions.</li>
+	<li>You wanted more, perhaps? That&#8217;s it!</li>
+</ol>
 
-	<div id="text-4" class="colophon-widget widget-wrapper widget_text">			
-		<div class="textwidget">
-			<div id="sign-up-for-beta" class="full_background">
-				<p>We are working hard to bring CodifyMe to you asap. We're looking for beta users to help us develop CodifyMe. Interested? Sign up to receive an invitation when the private beta is available! We can't wait to hear your thoughts!</p>
-				<div class="landing_page__beta_form">
-					[contact-form-7 id="30" title="SignUpForBetaRelease"]
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="text-5" class="colophon-widget widget-wrapper widget_text">
-		<div class="textwidget"><p class="social_icons"><a href="https://twitter.com/codify_me" target="_blank"><img src="/images/twitter_green50x50.png"></a>        <a href="https://www.facebook.com/pages/CodifyMe/263876173803559" target="_blank"><img src="/images/facebook_green50x50.png"></a></p>
-			<p><a href="mailto:hello@codifyme.co">hello@codifyme.co</a></p>
-			<p>copyright 2014 CodifyMe</p></div>
-		</div>
-	</div>
+<h2>Updating Manually</h2>
+<ol>
+	<li>Before you update anything, make sure you have backup copies of any files you may have modified such as <code>index.php</code>.</li>
+	<li>Delete your old WordPress files, saving ones you&#8217;ve modified.</li>
+	<li>Upload the new files.</li>
+	<li>Point your browser to <span class="file"><a href="wp-admin/upgrade.php">/wp-admin/upgrade.php</a>.</span></li>
+</ol>
 
+<h1>Migrating from other systems</h1>
+<p>WordPress can <a href="http://codex.wordpress.org/Importing_Content">import from a number of systems</a>. First you need to get WordPress installed and working as described above, before using <a href="wp-admin/import.php" title="Import to WordPress">our import tools</a>.</p>
 
-<script type="text/javascript">
-/*
-0. Home page
-1. Submit a question
-2. Awaiting response (mentee)
-3. Live tutoring screen
-4. Mentor profile
-5. Respond to bookings (mentor)
-6. My account (mentee)
-*/
+<h1>System Requirements</h1>
+<ul>
+	<li><a href="http://php.net/">PHP</a> version <strong>5.2.4</strong> or higher.</li>
+	<li><a href="http://www.mysql.com/">MySQL</a> version <strong>5.0</strong> or higher.</li>
+</ul>
 
-function getSite() {
-    var sites = ['http://app.uxpin.com/668523351332f4675f5308508350d943c4d06412/10755173cm',
-                 'http://app.uxpin.com/668523351332f4675f5308508350d943c4d06412/10755285cm',
-                 'http://app.uxpin.com/668523351332f4675f5308508350d943c4d06412/10755174cm',
-                 'http://app.uxpin.com/668523351332f4675f5308508350d943c4d06412/10755284cm',
-                 'http://app.uxpin.com/76e12d8b3d096a14714e46bb107826a3bb43c073/10011056cm',
-                 'http://app.uxpin.com/668523351332f4675f5308508350d943c4d06412/10756392cm',
-                 'http://app.uxpin.com/668523351332f4675f5308508350d943c4d06412/10756496cm']
+<h2>System Recommendations</h2>
+<ul>
+	<li>The <a href="http://httpd.apache.org/docs/2.2/mod/mod_rewrite.html">mod_rewrite</a> Apache module.</li>
+	<li>A link to <a href="https://wordpress.org/">https://wordpress.org</a> on your site.</li>
+</ul>
 
-    document.getElementById('uxPinIframe').src = sites[jQuery(this).val()];
-}    
-</script>
-<input type="button" value="Preview a Page" onClick="getSite()" />
-<iframe id="uxPinIframe" src="http://getprismatic.com/" onLoad="iframeDidLoad();"></iframe>
+<h1>Online Resources</h1>
+<p>If you have any questions that aren&#8217;t addressed in this document, please take advantage of WordPress&#8217; numerous online resources:</p>
+<dl>
+	<dt><a href="http://codex.wordpress.org/">The WordPress Codex</a></dt>
+		<dd>The Codex is the encyclopedia of all things WordPress. It is the most comprehensive source of information for WordPress available.</dd>
+	<dt><a href="https://wordpress.org/news/">The WordPress Blog</a></dt>
+		<dd>This is where you&#8217;ll find the latest updates and news related to WordPress. Recent WordPress news appears in your administrative dashboard by default.</dd>
+	<dt><a href="http://planet.wordpress.org/">WordPress Planet</a></dt>
+		<dd>The WordPress Planet is a news aggregator that brings together posts from WordPress blogs around the web.</dd>
+	<dt><a href="https://wordpress.org/support/">WordPress Support Forums</a></dt>
+		<dd>If you&#8217;ve looked everywhere and still can&#8217;t find an answer, the support forums are very active and have a large community ready to help. To help them help you be sure to use a descriptive thread title and describe your question in as much detail as possible.</dd>
+	<dt><a href="http://codex.wordpress.org/IRC">WordPress <abbr title="Internet Relay Chat">IRC</abbr> Channel</a></dt>
+		<dd>There is an online chat channel that is used for discussion among people who use WordPress and occasionally support topics. The above wiki page should point you in the right direction. (<a href="irc://irc.freenode.net/wordpress">irc.freenode.net #wordpress</a>)</dd>
+</dl>
 
-*****************
+<h1>Final Notes</h1>
+<ul>
+	<li>If you have any suggestions, ideas, or comments, or if you (gasp!) found a bug, join us in the <a href="https://wordpress.org/support/">Support Forums</a>.</li>
+	<li>WordPress has a robust plugin <abbr title="application programming interface">API</abbr> that makes extending the code easy. If you are a developer interested in utilizing this, see the <a href="http://codex.wordpress.org/Plugin_API" title="WordPress plugin API">plugin documentation in the Codex</a>. You shouldn&#8217;t modify any of the core code.</li>
+</ul>
 
-<script>
-hideAllDivs = function () {
-    jQuery("#preview-home").hide();
-    jQuery("#preview-mentor-profile").hide();
-    jQuery("#preview-respond-to-booking").hide();
-};
+<h1>Share the Love</h1>
+<p>WordPress has no multi-million dollar marketing campaign or celebrity sponsors, but we do have something even better&#8212;you. If you enjoy WordPress please consider telling a friend, setting it up for someone less knowledgable than yourself, or writing the author of a media article that overlooks us.</p>
 
-handleNewSelection = function () {
+<p>WordPress is the official continuation of <a href="http://cafelog.com/">b2/caf&#233;log</a>, which came from Michel V. The work has been continued by the <a href="https://wordpress.org/about/">WordPress developers</a>. If you would like to support WordPress, please consider <a href="https://wordpress.org/donate/" title="Donate to WordPress">donating</a>.</p>
 
-    hideAllDivs();
-    
-    switch (jQuery(this).val()) {
-        case '1':
-            jQuery("#preview-home").show();
-        break;
-        case '2':
-            jQuery("#preview-mentor-profile").show();
-        break;
-        case '3':
-            jQuery("#preview-respond-to-booking").show();
-        break;
-    }
-};
+<h1>License</h1>
+<p>WordPress is free software, and is released under the terms of the <abbr title="GNU General Public License">GPL</abbr> version 2 or (at your option) any later version. See <a href="license.txt">license.txt</a>.</p>
 
-jQuery(document).ready(function() {
-    
-    jQuery("#preview_id").change(handleNewSelection);
-    
-    // Run the event handler once now to ensure everything is as it should be
-    handleNewSelection.apply(jQuery("#preview_id"));
-    
-});
-</script>
-
-<script type="text/javascript">
-/*
-0. Home page
-1. Submit a question
-2. Awaiting response (mentee)
-3. Live tutoring screen
-4. Mentor profile
-5. Respond to booking (mentor)
-6. My account (mentee)
-*/
-
-function getSite() {
-    var sites = ['http://app.uxpin.com/668523351332f4675f5308508350d943c4d06412/10755173cm',
-                 'http://app.uxpin.com/668523351332f4675f5308508350d943c4d06412/10755285cm',
-                 'http://app.uxpin.com/668523351332f4675f5308508350d943c4d06412/10755174cm',
-                 'http://app.uxpin.com/668523351332f4675f5308508350d943c4d06412/10755284cm',
-                 'http://app.uxpin.com/76e12d8b3d096a14714e46bb107826a3bb43c073/10011056cm',
-                 'http://app.uxpin.com/668523351332f4675f5308508350d943c4d06412/10756392cm',
-                 'http://app.uxpin.com/668523351332f4675f5308508350d943c4d06412/10756496cm']
-
-    document.getElementById('uxPinIframe').src = sites[jQuery(this).val()];
-}      
-jQuery(document).ready(function() {
-    
-    jQuery("#preview_id").change(getSite);
-    
-    // Run the event handler once now to ensure everything is as it should be
-   // handleNewSelection.apply(jQuery("#preview_id"));
-    
-});
-</script>
+</body>
+</html>

@@ -6901,10 +6901,11 @@ input, textarea {
 .only-on-home #more-site {
   display: inline-block;
 }
-@media (max-width: 600px) {
+/*@media (max-width: 600px) {
   #more-site {
     display: none !important;
   }
+*/
 }
 
 #site-meta i,

@@ -1,0 +1,50 @@
+msgid "Login with"
+msgstr "Ingresar con"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Username"
+msgstr "Nombre de usuario"
+
+msgid "Password"
+msgstr "contrase&ntilde;a"
+
+msgid "Login"
+msgstr "logon"
+
+msgid "Howdy,"
+msgstr "&iexcl;Hola,"
+
+msgid "Logout"
+msgstr "Salir"
+
+msgid "Error in login!"
+msgstr "Error en el inicio de sesi&oacute;n!"
+
+msgid "Username or password is empty!"
+msgstr "Nombre de usuario o la contrase&ntilde;a est&aacute; vac&iacute;a!"
+
+msgid "Please enter your email address!"
+msgstr "Introduzca su direcci&oacute;n de correo electr&oacute;nico!"
+
+msgid "Email address already exist!"
+msgstr "Dirección de correo electrónico ya existe!"
+
+msgid "Username already exist!"
+msgstr "Nombre de usuario ya existe!"
+
+msgid "Remember Me"
+msgstr "Acu&eacute;rdate de m&iacute;"
+
+msgid "Submit"
+msgstr "Enviar"
+
+msgid "Please enter your email. The password reset link will be provided in your email."
+msgstr "Introduzca su direcci&oacute;n de correo electr&oacute;nico. El enlace de restablecimiento de contrase&ntilde;a ser&aacute; proporcionada en su correo electr&oacute;nico."
+
+msgid "Lost Password?"
+msgstr "Perdi&oacute; su contrase&ntilde;a?"
+
+msgid "Register"
+msgstr "Registro"

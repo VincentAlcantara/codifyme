@@ -1,0 +1,50 @@
+msgid "Login with"
+msgstr "Log p&aring; med"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Username"
+msgstr "Brugernavn"
+
+msgid "Password"
+msgstr "adgangskode"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Howdy,"
+msgstr "Howdy,"
+
+msgid "Logout"
+msgstr "Log"
+
+msgid "Error in login!"
+msgstr "Fejl i login!"
+
+msgid "Username or password is empty!"
+msgstr "Brugernavn eller kodeord er tom!"
+
+msgid "Please enter your email address!"
+msgstr "Indtast venligst din e-mail-adresse!"
+
+msgid "Email address already exist!"
+msgstr "E-mail-adresse findes allerede!"
+
+msgid "Username already exist!"
+msgstr "Brugernavn findes allerede!"
+
+msgid "Remember Me"
+msgstr "Husk mig"
+
+msgid "Submit"
+msgstr "Indsend"
+
+msgid "Please enter your email. The password reset link will be provided in your email."
+msgstr "Indtast venligst din e-mail. Nulstilling af adgangskode link vil blive leveret i din e-mail."
+
+msgid "Lost Password?"
+msgstr "Glemt adgangskode?"
+
+msgid "Register"
+msgstr "Tilmeld"
