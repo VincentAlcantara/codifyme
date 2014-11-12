@@ -68,11 +68,9 @@ $space_class = '';
     						<?php bloginfo( 'description' ); ?>
     					</h2>
     					
-    					<div id="more-site-disabled" class="container">
-                        <div class="gform_wrapper_beta_release">
-    						<?php echo do_shortcode('[gravityform id="1" name="Sign Up For Beta Release" title="false" description="false" ajax="true"]' ); ?>
-    					</div>
-                        </div>
+    					<div id="more-site" class="container sign-up-for-beta-release">
+                			<?php echo do_shortcode('[contact-form-7 id="169" title="Sign Up For Beta Release"]' ); ?>
+    			        </div>
     					<!--
     					<a href="#" id="more-site" class="btn btn-default btn-lg"><?php _e( 'See More', 'arcade' ); ?></a>
     					-->
