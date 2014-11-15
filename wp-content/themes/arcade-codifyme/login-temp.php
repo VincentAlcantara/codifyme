@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Login Page
+ * Template Name: Login TempPage
  *
  */
 get_header('no-image');
@@ -43,7 +43,6 @@ get_header('no-image');
 
 			wp_login_form( $args );
 			?>
-
 		</div>
 	</div>
 </div>

@@ -54,7 +54,7 @@ MEDIA
 */
 
 @import url("../arcade-basic/style.css");
-@import url("customize.css");
+/*@import url("customize.css");*/
 
 
 /* {
@@ -147,7 +147,8 @@ input[type=submit]:hover{
 	font-weight: normal;
 	text-shadow: none;
 }
-.wc-shortcodes-button{
+
+a.wc-shortcodes-button{
 	height: 61px;
 	width: 190px;
 	padding:16px;
@@ -155,6 +156,12 @@ input[type=submit]:hover{
 	border-radius: 3px;
 	color: #fff;
 }
+
+.wc-shortcodes-button:hover{
+	color: #eee;
+
+}
+
 
 a.wc-shortcodes-button{
 	text-decoration: none;
@@ -170,6 +177,7 @@ a.wc-shortcodes-button{
 	background: #895099;
 	color: #fff;
 	width: 250px;
+	border-color: #895099;
 }
 
 textarea {
@@ -254,12 +262,13 @@ textarea {
   Sign up for Beta Release Form  
  *--------------------------------*/
 .sign-up-for-beta-release form {
-	width:50%;
+	width:90%;
+	max-width: 500px;
 	margin: 20px auto;
 }
 .sign-up-for-beta-release span.wpcf7-form-control-wrap {
  	float: left;
- 	width:60%;
+ 	width:58%;
 }
 	.sign-up-for-beta-release span.wpcf7-form-control-wrap input {
 		width:100%;
@@ -267,7 +276,7 @@ textarea {
 
 .sign-up-for-beta-release input[type=submit] {
 	float: right;
-	width:40%;
+	width:42%;
 }
 /*--------------------------------*
   Become a Mentor form
@@ -332,11 +341,95 @@ article #landing-page .title-card-wrapper{
 
 #you-are-the-coding-community {
 	height: 450px;
-	padding: 150px;
+	padding: 150px 0;
 }
 
 #passionate {
 	font-size: 20px;
+}
+
+/*--------------------------------*
+  Landing Page - Mentors
+ *--------------------------------*/
+ .group_users ul.group_users-ul li{
+ 	display: inline-block;
+ }
+.group_users .group_users-ul .bc_avatar {
+	float:none;
+	width: 250px;
+	display: inline-block;
+}
+
+/*--------------------------------*
+  Login Form
+ *--------------------------------*/
+ #primary {
+ 	margin-top: 200px;
+ 	text-align: center;
+ 	height: 540px;
+ }
+#custom_login_form_bottom {
+	width:200px;
+	margin: 0 auto;
+ }
+#loginform a, .login-remember {
+	font-size: 12px;
+	padding: 5px;
+}
+
+#loginform p label {
+	font-weight: normal;
+}
+
+.login-username label, .login-password label {
+	display: none;
+}
+#wp-submit {
+	width: 190px;
+    height: 40px;
+    font-size: 14px;
+    padding:10px;
+	border-radius: 3px;
+}
+
+/*--------------------------------*
+  Learn Page
+ *--------------------------------*/
+.my_group .my_group-ul .bc_avatar {
+	float: none;
+}
+.my_group .my_group-ul li .group-infos {
+	float: left;
+	margin: 0;
+}
+
+.wc-shortcodes-tabs .tab-content *:last-child {
+	padding-left: 0;
+}
+.my_group .my_group-ul li .group-infos h4 {
+	font-size: 30px;
+}
+.group_users .group_users-ul .user-infos {
+	margin: 0;
+}
+
+
+.bc_avatar {
+	border: 2px solid ##ff;
+}
+
+.bc_avatar img {
+	-webkit-border-radius: 75px; /* Saf3+, Chrome */
+	border-radius: 75px; /* Opera 10.5, IE 9 */
+	/*-moz-border-radius: 30px;  Disabled for FF1+ */
+}
+
+.image-anchor, .group_users .group_users-ul li .user-infos h4 {
+	text-align: center;
+}
+
+.group_users-ul {
+	padding-left: 0;
 }
 
 /*----------------------------------------------------------------------------*\
@@ -392,7 +485,7 @@ article #landing-page .title-card-wrapper{
 }
 
 	
-@media (max-width:480px) {
+@media (max-width:500px) {
 
 	.no-fittext #site-title {
 		margin-top: 50px;
@@ -411,6 +504,18 @@ article #landing-page .title-card-wrapper{
 
 	#become-a-mentor input, #become-a-mentor textarea {
 		width: 95%;
+	}
+
+	article #landing-page .title-card-wrapper{
+		height: 450px;
+	}
+
+	.landing-page-section {
+		margin-bottom: 25px;
+	}
+	#you-are-the-coding-community {
+		height: 400px;
+		padding: 25px 0;
 	}
 }
 

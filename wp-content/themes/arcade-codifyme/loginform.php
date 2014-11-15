@@ -116,7 +116,7 @@ function custom_login_form_middle (){
 add_action( 'login_form_bottom', 'custom_login_form_bottom' );
 
 function custom_login_form_bottom (){
-        $html = '<a href="#register">New User?</a><a href="/wp-login.php?action=lostpassword">Lost Password?</a><i class="fa fa-pencil-square-o"></i>';
+        $html = '<a href="/register">New User?</a><a href="/wp-login.php?action=lostpassword">Lost Password?</a><i class="fa fa-pencil-square-o"></i>';
        
 	return $html;
 }

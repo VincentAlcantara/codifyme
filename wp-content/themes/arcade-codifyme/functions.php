@@ -75,6 +75,7 @@ function possibly_redirect(){
       ( isset($_GET['action']) && $_GET['action']=='logout') ||   // in case of LOGOUT
       ( isset($_GET['action']) && $_GET['action']=='lostpassword') ||   // in case of LOST PASSWORD
       ( isset($_GET['checkemail']) && $_GET['checkemail']=='confirm') ||   // in case of LOST PASSWORD
+      ( isset($_GET['action']) && $_GET['action']=='register')  ||    // in case of REGISTER
       ( isset($_GET['checkemail']) && $_GET['checkemail']=='registered') ) return;    // in case of REGISTER
     else wp_redirect(home_url('/login'));
     exit();
