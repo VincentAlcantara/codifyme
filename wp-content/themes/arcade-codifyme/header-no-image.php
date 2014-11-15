@@ -31,11 +31,12 @@ $space_class = '';
 	<div id="page">
 
 		<header id="header">
+            
 			<nav id="site-navigation" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-                <div class="logo">
-                    <a id="logo" href="/"><img src='<?php echo get_stylesheet_directory_uri(); ?>/images/codifyme_logo_small-100x31.png'></a>
-                </div>
-				<h3 class="sr-only"><?php _e( 'Main menu', 'arcade' ); ?></h3>
+			<div class="logo">
+                <a id="logo" href="/"><img src='<?php echo get_stylesheet_directory_uri(); ?>/images/codifyme_logo_small-100x31.png'></a>
+            </div>
+            	<h3 class="sr-only"><?php _e( 'Main menu', 'arcade' ); ?></h3>
 				<a class="sr-only" href="#primary" title="<?php esc_attr_e( 'Skip to content', 'arcade' ); ?>"><?php _e( 'Skip to content', 'arcade' ); ?></a>
 
 				<div class="navbar-header">
@@ -54,37 +55,7 @@ $space_class = '';
 				</div>
 			</nav><!-- #site-navigation -->
 
-			 <div class="title-card-wrapper">
-                <div class="title-card">
-    				<div id="site-meta">
-    					<h1 id="site-title">
-    						<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-    					</h1>
-
-    					<?php if ( $bavotasan_theme_options['header_icon'] ) { ?>
-    					<i class="fa <?php echo $bavotasan_theme_options['header_icon']; ?>"></i>
-    					<?php } else {
-    						$space_class = ' class="margin-top"';
-    					} ?>
-
-    					<h2 id="site-description"<?php echo $space_class; ?>>
-    						<?php bloginfo( 'description' ); ?>
-    					</h2>
-    					
-    					<div id="more-site" class="container sign-up-for-beta-release">
-                			<?php echo do_shortcode('[contact-form-7 id="169" title="Sign Up For Beta Release"]' ); ?>
-    			        </div>
-    					<!--
-    					<a href="#" id="more-site" class="btn btn-default btn-lg"><?php _e( 'See More', 'arcade' ); ?></a>
-    					-->
-    				</div>
-
-    				<?php
-    				// Header image section
-    				bavotasan_header_images();
-    				?>
-				</div>
-			</div>
+			
 
 		</header>
 

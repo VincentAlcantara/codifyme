@@ -62,18 +62,30 @@ MEDIA
 }
 */
 
+#landing-page {
+	text-align: center;
+}
+
 /*----------------------------------------------------------------------------*\
   Globals
 \*----------------------------------------------------------------------------*/
+article {
+	padding-top: 40px;
+}
+
+iframe {
+	width: 100%;
+	height: 650px;
+}
+
+.basic h1 {
+	margin-bottom: 20px;
+}
 
 
 /*----------------------------------------------------------------------------*\
   FUNCTIONAL ELEMENTS
 \*----------------------------------------------------------------------------*/
-iframe {
-	width: 100%;
-	height: 650px;
-}
 /* Contact Form warning and error messages */
 span.wpcf7-not-valid-tip, div.wpcf7-validation-errors,
 div.wpcf7-mail-sent-ok {
@@ -105,7 +117,8 @@ input[type=text], input[type=submit] {
 	white-space: pre-wrap;
 
 }
-input[type=submit], select{
+input[type=submit], select, 
+.wc-shortcodes-button-primary:visited, .wc-shortcodes-button-primary{
 	background-color: #37a447;
 	border: 1px solid #37a447;
 	color: #fff;
@@ -133,6 +146,30 @@ input[type=submit]:hover{
 	background-image: linear-gradient(top,#8BE25F,#8BE25F);
 	font-weight: normal;
 	text-shadow: none;
+}
+.wc-shortcodes-button{
+	height: 61px;
+	width: 190px;
+	padding:16px;
+	font-size: 18px;
+	border-radius: 3px;
+	color: #fff;
+}
+
+a.wc-shortcodes-button{
+	text-decoration: none;
+}
+
+.wc-shortcodes-button.wc-shortcodes-button-secondary:visited, 
+.wc-shortcodes-button.wc-shortcodes-button-secondary {
+	background: #db3580;
+	color: #fff;
+}
+.wc-shortcodes-button.wc-shortcodes-button-tertiary:visited, 
+.wc-shortcodes-button.wc-shortcodes-button-tertiary {
+	background: #895099;
+	color: #fff;
+	width: 250px;
 }
 
 textarea {
@@ -172,13 +209,26 @@ textarea {
 	margin-top: -200px;
 }
 
+.custom_loginform {
+	width: 250px;
+    height: 400px;
+    margin: 80px auto auto 0;
+                font-family: 'Open Sans';
+                font-size: 14px;
+}
 
 
 /*----------------------------------------------------------------------------*\
   CONTENT ELEMENTS
 \*----------------------------------------------------------------------------*/
 
-
+.logo {
+	display: inline;
+	float:left;
+	padding:12px 3px;
+	width: 100px;
+	height: 31px;
+}
 
 /* headings of blogs and meta data */
 .container h1.entry-title, .home h1 {
@@ -237,8 +287,9 @@ textarea {
 	margin: 10px auto;
 }
 
-
-/* Preview Frame */
+/*--------------------------------*
+  Preview Iframe
+ *--------------------------------*/
 #preview-iframe {
 	max-width: 1280px;
 	margin: 0 auto;
@@ -249,10 +300,45 @@ textarea {
 	overflow: hidden;
 }
 
-/* More Site */
+/*--------------------------------*
+  More Site
+ *--------------------------------*/
+
 #more-site {
 	border: none;
 }
+
+/*--------------------------------*
+  Landing Page
+ *--------------------------------*/
+
+#post-182 h1.entry-title {
+	display: none;
+}
+
+#landing-page {
+	text-align: center;
+}
+.basic a.underline {
+	text-decoration: underline;
+}
+.landing-page-section {
+	margin-bottom: 200px;
+}
+
+article #landing-page .title-card-wrapper{
+	height: 848px;
+}
+
+#you-are-the-coding-community {
+	height: 450px;
+	padding: 150px;
+}
+
+#passionate {
+	font-size: 20px;
+}
+
 /*----------------------------------------------------------------------------*\
   PRESENTATIONAL ELEMENTS
 \*----------------------------------------------------------------------------*/

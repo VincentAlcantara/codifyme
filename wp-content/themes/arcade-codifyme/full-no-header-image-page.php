@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Full No Header Image Page
+ * Template Name: No Header Image
  *
  * This template is based on page.php, but it does not contain a sidebar, or Header Image
  *
